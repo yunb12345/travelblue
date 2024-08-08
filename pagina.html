@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TravelBlue</title>
+        <meta hhtp-equiv="content-type" content="text/html" charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/22fe0279eb.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div class="seccion01">
+            <header>
+                <div class="contNav">
+                    <a href="pagina.html" class="logo"><img src="logos/logo.jpg" class="logo" /></a>
+                    <button class="nav-barra">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class="nav">
+                            <ul class="menuNav">
+                                <li class="subNav"><a href="destinos/destinos.html" class="textoNav">Destinos</a></li>
+                                <li class="subNav"><a href="convenios.html" class="textoNav">Convenios</a></li>
+                                <li class="subNav"><a href="#contactos" class="textoNav">Contacto</a></li>
+                                <li class="subNav"><a href="login/reservas.html" class="textoNav">Reservas</a></li>
+                                <li class="subNav"><button class="abrir" onclick="openForm()" id="abrir">Login</button></li>
+                            </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="contenedor2">
+                <form id="formfrase">
+                    <h1 class="frase">Encuentra tu destino soñado</h1>
+                    <div class="form-box">
+                        <input type="text" class="buscadores" id="destino" placeholder="Busca tu destino" onkeyup="Modificar()">
+                        <!--<button class="botonbuscar">Buscar</button> -->
+                        <ul id="box-search">
+                            <li><a href="Miami.html">Miami</a></li>
+                            <li><a href="nassau.html">Bahamas</a></li>
+                            <li><a href="londres.html">Londres</a></li>
+                            <li><a href="patagonia.html">Patagonia</a></li>
+                            <li><a href="hawaii.html">Hawaii</a></li>
+                            <li><a href="tailandia.html">Tailandia</a></li>
+                        </ul>
+                    </div>
+
+                            
+                </form>
+            </div>
+        </div>
+        <div class="seccion02">
+            <h1 class="tituloS2">Destinos Preferidos por los clientes</h1>
+            <div class="nuestrosDestinos">
+                <a href="nassau.html">
+                    <img src="destinos/nassau.jpg" class="imgDestino">
+                    <h1 class="textImg">Bahamas</h1></a>
+                <a href="londres.html">
+                    <img src="destinos/olo.jpg" class="imgDestino">
+                    <h1 class="textImg">Londres</h1>
+                </a>
+                <a href="Miami.html">
+                    <img src="logos/miami (1).jpg" class="imgDestino">
+                    <h1 class="textImg">Miami</h1>
+                </a>
+            </div>
+        </div>
+        <div class="seccion03" id="contactos">
+
+            <h1 class="tituloS3">Contacto</h1>
+            <div class="contactos">
+                    <a><img src="logos/twitter2.png" class="redessociales"></a>
+                    <a><img src="logos/instagram2.png" class="redessociales"></a>
+                    <a><img src="logos/yutu.png" class="redessociales"></a>
+                    <a><img src="logos/feisbu.png" class="redessociales"></a>
+            </div>
+
+        </div>
+        <div class="popup-overlay" id="popup"></div> 
+        <div class="forma-login" id="myForm">
+            <form>
+                <h1>Login</h1>
+                <div class="text-box">
+                    <input type="email" placeholder="Email" name="" value="" class="textoInput" required>
+                </div>
+                <div class="text-box">
+                    <input type="password" placeholder="Contraseña" name=""  class="textoInput" required>
+                </div>
+                <button class="buttonlogin">Entrar</button>
+                <button onclick="closeForm()" class="cerrarFormulario">Cancelar</button>
+                <button class="buttonregister" onclick="openRegister()">Registrarse</button>
+            </form>
+        </div>
+
+        <form class="forma-login" id="form">
+            <h1>Registrarse</h1>
+            <div class="text-box">
+                <input type="text" placeholder="Nombre" name="nombre" value="" class="textoInput" id="text-box-cont" required>
+            </div>
+            <div class="text-box">
+                <input type="email" placeholder="Email" name="email" value="" class="textoInput" id="email" required>
+            </div>
+            <div class="text-box">
+                <input type="password" placeholder="Contraseña" name="contraseña" value="" class="textoInput" id="password" required>
+            </div>
+            <div class="text-box">
+                <input type="password" placeholder="Repetir Contraseña" name="" value="" class="textoInput" id="password2" required>
+            </div>
+            <button class="buttonregister" type="submit" name="" value="Entrar" id="submit">Registrarse</button>
+            <button onclick="CloseRegister()" class="cerrarFormulario">Cancelar</button>
+            <p id="warnings"></p>
+        </form>
+        <div class="resevas">
+
+        </div>
+        <script src="principal.js"></script>
+    </body>
+</html>

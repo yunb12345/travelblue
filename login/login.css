@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #dff9fb;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:'Montserrat', sans-serif;
+}
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 15px;
+    background:#47bbec;
+
+}
+.login-box h1{
+    float: top;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 13px 0;
+    color: #ffffff;
+}
+.text-box{
+    width: 100%;
+    overflow: hidden; /*para tener mejor control del layout. El overflow especifica lo que pasa cuando el contenido se desborda del elemento de la caja */
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    background: white;
+    border-radius: 5px;
+
+}
+.text-box input{
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    float: left;  /*para posicionar el text-box input dentro del text-box*/
+    margin: 5px;
+    
+
+
+}
+.text-box input::placeholder{
+    color: black;
+    opacity: 0.8;
+}
+.buttonlogin{
+    width: 100%; /*ancho del boton al 100%*/
+    background: #3B3B98;
+    border: 3px solid black;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    margin: 2px;
+    margin-top: 10px;
+    cursor:pointer;
+    border:#3B3B98;
+    border-radius: 5px;
+}
+.texto_registrar{
+    color: white;
+}
+.link_registrar{
+    background-color: none ;
+    color: #3B3B98;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top:4px
+}
+.link_registrar:hover{
+    color:#7efff5;
+}
+.logo{
+    position: relative;
+    cursor:pointer;
+    height:100px;
+    width: 180px;
+    object-fit: cover;
+    left:0px;   
+}
+.subLista{
+    display:inline-block;
+    padding:0px 20px;
+    transition: all 0.3s ease 0s;
+    
+}
+.laLista{
+    list-style: none;
+}
+.textoLista{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.textoLista:hover{
+    color:cyan;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: right;
+    padding:10px;
+    background-color: #47bbec;
+}
+nav{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}

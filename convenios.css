@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-family:"Montserrat",sans-serif;
+}
+.laLista{
+    list-style: none;
+}
+.textoLista{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.textoLista:hover{
+    color:cyan;
+}
+.subLista{
+    display:inline-block;
+    padding:0px 20px;
+    transition: all 0.3s ease 0s;
+}
+.logo{
+    position: relative;
+    cursor:pointer;
+    height:100px;
+    width: 180px;
+    object-fit: cover;
+    left:0px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: right;
+    padding:10px;
+    background-color: #47bbec;
+}
+/* nav ----------- */
+.seccion{
+    display:block;
+}
+.imghoteles{
+    height: 490px;
+    width: 590px;
+    margin:auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+
+}
+.hotel{
+    margin:auto;
+    padding:10px;
+    display:flex;
+    position:relative;
+}
+.cajaimagen{
+    width:45%;
+    float:left;
+    height:100%;
+    display:flex;
+}
+.cajainformacion{
+    float: right;
+    width: 50%;
+    text-align: center;
+    display:flex;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    max-height:598px;
+}
+.contenido{
+    display:block;
+    margin:auto;
+    padding:80px;
+}
+.Tituloprincipal{
+    text-align:center;
+    margin:auto;
+    padding-top: 40px;
+    padding-bottom:50px;
+}
+.listaConvenios{
+    text-align: left;
+    font-size: 20px;
+}
+.sublistaConvenios{
+    padding-top:15px;
+}
+h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+/* contactos */
+.tituloS3{
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+}
+.redessociales{
+    height:50px;
+    width: 50px;
+    position:relative;
+    margin:50px;
+    cursor:pointer;
+}
+.contactos{
+    text-align: center;
+}
+.seccion03{
+    padding-top:60px;
+}
+@media(max-width:1371px){
+    .hotel{
+        flex-direction: column;
+        align-content: center;
+    }
+    .cajainformacion{
+        float:none;
+        position: relative;
+        width:50%;
+        left:25%;
+    }
+    .cajaimagen{
+        float:none;
+        width:100%;
+        padding-bottom: 50px;
+        padding-top:50px;
+    }
+}
+@media(max-width:540px){
+    .contenido{
+        font-size:20px;
+    }
+    .sublistaConvenios{
+        font-size:14px;
+    }
+    h2{
+        font-size:20px;
+    }
+}

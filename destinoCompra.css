@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27");
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+    font-family:"Montserrat",sans-serif;
+}
+/*nav*/
+.laLista{
+    list-style: none;
+}
+.textoLista{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.textoLista:hover{
+    color:cyan;
+}
+
+.subLista{
+    display:inline-block;
+    padding:0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.logo{
+    position: relative;
+    cursor:pointer;
+    height:100px;
+    width: 180px;
+    object-fit: cover;
+    left:0px;
+    
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: right;
+    padding:10px;
+    background-color: #47bbec;
+}
+/*   */
+.parte1{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.nombreDeDestino{
+    padding-left:80px;
+    padding-right:80px;
+    text-align: center;
+}
+.divImagenDestino{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    /*flex:1 1 100%; */
+    padding-top: 12px;
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
+    max-height: 550px;
+    margin: 0px;
+}
+.imgDestino{
+    display:flex;
+    flex-direction:column;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    padding-left: 10px;
+}
+.parte2{
+    border-top:1px solid black ;
+    padding-left:80px;
+    padding-right:80px;
+    display:flex;
+}
+.parteIzq{
+    width: 50%;
+    float: left;
+    position:relative;
+}
+.h1Frase{
+    padding-top: 30px;
+}
+.cajaInformacion{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid black;
+}
+.subListaInformacion{
+    padding-top: 10px;
+}
+
+.descripcionSubLista{
+    font-weight: lighter;
+}
+.servicios{
+    padding-bottom:50px;
+}
+.cajaServicio{
+    display:flex;
+    align-items:center;
+    
+}
+.subCajaServicio{
+    justify-content: flex-end;
+    align-items:center;
+    width: 50%;
+}
+.iconoServicio{
+    height: 24px;
+    width: 24px;
+    padding: 2px;
+    margin: 0;
+}
+.tituloServicios{
+    padding-top:30px;
+    padding-bottom:25px;
+}
+.textoSubServicio{
+    padding-left: 10px;
+    max-width: 19px;
+}
+.parteDere{
+    width:50%;
+    float: right;
+    padding-top: 30px;
+    padding-left: 10px;
+    position:relative;
+}
+.cajaCompra{
+    border: 1px solid rgb(221,221,221);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    background-color: white/*rgba(180,180,180,0.5); */
+    
+}
+.dentroCajaCompra{
+    padding:30px;
+}
+.fecha{
+    width:100%;
+    align-items:stretch;
+}
+.checkIn, .checkOut{
+    width:100%;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.precio{
+    padding-bottom:24px;
+    font-size:35px;
+}
+.divBotonReservar{
+    padding-top:15px;
+}
+.botonReservar{
+    background-color: #47bbec;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20;
+    cursor:pointer;
+}
+.precioAbajo{
+    padding-top: 10px;
+}
+.ulPrecioDetalle{
+    list-style-type: none;
+}
+.ulPrecioTotal{
+    list-style-type: none;
+}
+.liCostoViaje{
+    padding-bottom: 10px;
+    display: flex;
+}
+.liTarifaPorServicio{
+    display:flex;
+    padding-bottom: 10px;
+}
+.liTarifaPorVuelo{
+    display:flex;
+    padding-bottom: 10px;
+}
+.textoLiCosto{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.ulPrecioTotal{
+    border-top: 1px solid black;
+    padding-top: 25px;
+}
+.liPrecioTotal{
+    display:flex;
+}
+.totalSpan{
+    flex-grow: 1;
+}
+.tituloS3{
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+}
+.redessociales{
+    height:50px;
+    width: 50px;
+    position:relative;
+    margin:50px;
+    cursor:pointer;
+}
+.contactos{
+    text-align: center;
+    padding:30px;
+}
+
+.seccion03{
+    display:block;
+}
